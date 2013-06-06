@@ -1,0 +1,19 @@
+<h2>LCS Standings</h2>
+<section class="main-content">
+  <table class="table-content">
+    <tbody>
+    <tr class="table-headings">
+      <td><h3>Team</h3></td>
+      <td><h3>Wins</h3></td>
+      <td><h3>Losses</h3></td>
+    </tr>
+    <% @lcs.each do |lcs| %>
+      <tr> 
+        <td><p><%= link_to lcs.name, team_path %></p></td>
+        <td><p><%= lcs.wins %></p></td>
+        <td><p><%= lcs.losses %></p></td>
+      </tr>
+    <% end %>
+  </tbody>
+  </table>
+</section>

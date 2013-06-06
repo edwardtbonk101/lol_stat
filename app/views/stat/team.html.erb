@@ -1,0 +1,24 @@
+<h2><%= @t_name %></h2>
+<section class="team-stats">
+  <h3>Roster</h3>
+  <table class="table-content">
+    <tbody>
+      <tr class="table-headings">
+        <td>Player Name</td>
+        <td>Player Role</td>
+      </tr>
+      <% @roster.each do |player| %>
+      <tr>
+        <td><p><%= player.p_name %></p></td>
+        <td><p><%= player.role %></p></td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
+</section>
+<section class="team-stats">
+  <h3>Stats</h3>
+</section>
+<section class="team-stats">
+  <h3>Schedule</h3>
+</section>

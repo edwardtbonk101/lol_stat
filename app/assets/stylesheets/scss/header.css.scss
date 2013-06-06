@@ -1,0 +1,14 @@
+header {
+  border-bottom: solid .25em $color-primary;
+  h1 {
+    color: $color-primary;
+    text-align: center;
+  }
+  p {
+    color: $color-primary;
+    text-align: center;
+  }
+  span {
+    color: $color-secondary;
+  }
+}

@@ -1,0 +1,16 @@
+button, a {
+  background: none;
+  border: none;
+  text-decoration: none;
+  color: $color-secondary;
+}
+.button-main {
+  margin-bottom: 2em;
+  border: solid .15em $color-primary;
+  font-weight: bold;
+  width: 13em;
+  padding: 1em;
+  border-radius: 2em;
+  background-color: white;
+  color: $color-secondary;
+}

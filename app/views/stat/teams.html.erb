@@ -1,0 +1,18 @@
+<h2>Teams</h2>
+<section class="main-content">
+  <table class="table-content">
+    <tbody>
+      <tr class="table-headings">
+        <td><h3>Team</h3></td>
+      </tr>
+      <% @team.each do |team| %>
+        <%= form_tag('team', method: "put") do %>
+        <tr>
+          <td><p><%= button_tag team.name %></p></td>
+        </tr>
+        <%= hidden_field_tag 't_name', team.name %>
+        <% end %>
+      <% end %>
+    </tbody>
+  </table>
+</section>

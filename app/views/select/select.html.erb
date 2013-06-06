@@ -1,0 +1,5 @@
+<h2>Region: <%= session[:region] %></h2>
+<section class="menu-select">
+  <button class="button-main"><%= link_to "Teams", {:controller => :stat, :action => "teams"} %></button></br>
+  <button class="button-main"><%= link_to "LCS Standings", {:controller => :stat, :action => "lcs"} %></button>
+</section>
