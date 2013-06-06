@@ -596,32 +596,33 @@ body h2 {
 
 /* line 21, ../../app/assets/stylesheets/scss/body.css.scss */
 .table-headings {
+  height: 3.5em;
   background-color: #6e6e6e;
   color: white;
   font-weight: bold;
 }
 
-/* line 26, ../../app/assets/stylesheets/scss/body.css.scss */
+/* line 27, ../../app/assets/stylesheets/scss/body.css.scss */
 .table-content {
   width: 100%;
   border: solid 0.15em #6e6e6e;
   background-color: #CCC;
 }
-/* line 27, ../../app/assets/stylesheets/scss/body.css.scss */
+/* line 28, ../../app/assets/stylesheets/scss/body.css.scss */
 .table-content tr:nth-child(even) {
   background: #FFF;
 }
-/* line 33, ../../app/assets/stylesheets/scss/body.css.scss */
+/* line 34, ../../app/assets/stylesheets/scss/body.css.scss */
 .table-content p {
   color: #f2643d;
 }
-/* line 36, ../../app/assets/stylesheets/scss/body.css.scss */
+/* line 37, ../../app/assets/stylesheets/scss/body.css.scss */
 .table-content a {
   color: #f2643d;
   text-decoration: none;
 }
 
-/* line 41, ../../app/assets/stylesheets/scss/body.css.scss */
+/* line 42, ../../app/assets/stylesheets/scss/body.css.scss */
 .team-stats {
   display: inline-block;
   width: 30%;
@@ -629,7 +630,7 @@ body h2 {
   text-align: center;
   padding: 1em;
 }
-/* line 47, ../../app/assets/stylesheets/scss/body.css.scss */
+/* line 48, ../../app/assets/stylesheets/scss/body.css.scss */
 .team-stats h3 {
   color: #6e6e6e;
 }
