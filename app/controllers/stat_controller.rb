@@ -15,6 +15,7 @@ class StatController < ApplicationController
 
   def player
     @player = params[:p_name]
+    @player_stats = Player.where("p_name = '#{@player}'").all
   end
   
 end

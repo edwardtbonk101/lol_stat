@@ -4,8 +4,8 @@
   <table class="table-content">
     <tbody>
       <tr class="table-headings">
-        <td>Player Name</td>
-        <td>Player Role</td>
+        <th>Player Name</th>
+        <th>Player Role</th>
       </tr>
     <% @roster.each do |player| %>
       <%= form_tag('player', method: "put") do %>

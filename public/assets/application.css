@@ -606,11 +606,11 @@ body h2 {
 .table-content {
   width: 100%;
   border: solid 0.15em #6e6e6e;
-  background-color: #CCC;
+  background-color: #FFF;
 }
 /* line 28, ../../app/assets/stylesheets/scss/body.css.scss */
 .table-content tr:nth-child(even) {
-  background: #FFF;
+  background: #CCC;
 }
 /* line 34, ../../app/assets/stylesheets/scss/body.css.scss */
 .table-content p {
@@ -627,22 +627,21 @@ body h2 {
   display: inline-block;
   float: left;
   text-align: center;
+  padding: 1%;
 }
-/* line 46, ../../app/assets/stylesheets/scss/body.css.scss */
+/* line 47, ../../app/assets/stylesheets/scss/body.css.scss */
 .stats-column h3 {
   color: #6e6e6e;
 }
 
-/* line 50, ../../app/assets/stylesheets/scss/body.css.scss */
+/* line 51, ../../app/assets/stylesheets/scss/body.css.scss */
 .column-3 {
   width: 30%;
-  padding: 1em;
 }
 
 /* line 54, ../../app/assets/stylesheets/scss/body.css.scss */
 .column-2 {
   width: 48%;
-  padding: 1%;
 }
 
 /* line 1, ../../app/assets/stylesheets/scss/header.css.scss */
@@ -659,8 +658,9 @@ header p {
   color: #6e6e6e;
   text-align: center;
 }
-/* line 11, ../../app/assets/stylesheets/scss/header.css.scss */
-header span {
+
+/* line 12, ../../app/assets/stylesheets/scss/header.css.scss */
+span {
   color: #f2643d;
 }
 

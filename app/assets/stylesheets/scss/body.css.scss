@@ -26,11 +26,11 @@ body {
 }
 .table-content {
   tr:nth-child(even) {
-    background: #FFF;
+    background: #CCC;
   }
   width: 100%;
   border: solid .15em $color-primary;
-  background-color: #CCC;
+  background-color: #FFF;
   p{
     color: $color-secondary;
   }
@@ -43,15 +43,14 @@ body {
   display: inline-block;
   float: left;
   text-align: center;
+  padding: 1%;
   h3{
     color: $color-primary;
   }
 }
 .column-3 {
   width: 30%;
-  padding: 1em;
 }
 .column-2 {
   width: 48%;
-  padding: 1%;
 }
