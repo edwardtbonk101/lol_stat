@@ -623,16 +623,26 @@ body h2 {
 }
 
 /* line 42, ../../app/assets/stylesheets/scss/body.css.scss */
-.team-stats {
+.stats-column {
   display: inline-block;
-  width: 30%;
   float: left;
   text-align: center;
+}
+/* line 46, ../../app/assets/stylesheets/scss/body.css.scss */
+.stats-column h3 {
+  color: #6e6e6e;
+}
+
+/* line 50, ../../app/assets/stylesheets/scss/body.css.scss */
+.column-3 {
+  width: 30%;
   padding: 1em;
 }
-/* line 48, ../../app/assets/stylesheets/scss/body.css.scss */
-.team-stats h3 {
-  color: #6e6e6e;
+
+/* line 54, ../../app/assets/stylesheets/scss/body.css.scss */
+.column-2 {
+  width: 48%;
+  padding: 1%;
 }
 
 /* line 1, ../../app/assets/stylesheets/scss/header.css.scss */
@@ -687,4 +697,12 @@ button, a {
   border-radius: 2em;
   background-color: white;
   color: #f2643d;
+}
+/* line 16, ../../app/assets/stylesheets/scss/button.css.scss */
+.button-main:hover {
+  background-color: #474747;
+  -moz-transition: background-color .25s, -moz-transform .25s;
+  -webkit-transition: background-color .25s, -webkit-transform .25s;
+  -o-transition: background-color .25s, -o-transform .25s;
+  transition: background-color .25s, transform .25s;
 }

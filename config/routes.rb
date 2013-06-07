@@ -6,6 +6,7 @@ LolStat::Application.routes.draw do
   get '/lcs' => 'stat#lcs'
   get '/teams' => 'stat#teams'
   put '/team' => 'stat#team'
+  put '/player' => 'stat#player'
   
 
   # The priority is based upon order of creation:

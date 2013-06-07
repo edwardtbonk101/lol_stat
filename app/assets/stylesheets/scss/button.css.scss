@@ -13,4 +13,11 @@ button, a {
   border-radius: 2em;
   background-color: white;
   color: $color-secondary;
+  &:hover {
+    background-color: $color-background;
+    -moz-transition: background-color .25s, -moz-transform .25s;
+    -webkit-transition: background-color .25s, -webkit-transform .25s;
+    -o-transition: background-color .25s, -o-transform .25s;
+    transition: background-color .25s, transform .25s;
+  }
 }

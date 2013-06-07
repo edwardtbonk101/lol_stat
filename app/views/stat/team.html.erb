@@ -1,5 +1,5 @@
 <h2><%= @t_name %></h2>
-<section class="team-stats">
+<section class="stats-column column-3">
   <h3>Roster</h3>
   <table class="table-content">
     <tbody>
@@ -7,18 +7,21 @@
         <td>Player Name</td>
         <td>Player Role</td>
       </tr>
-      <% @roster.each do |player| %>
+    <% @roster.each do |player| %>
+      <%= form_tag('player', method: "put") do %>
       <tr>
-        <td><p><%= player.p_name %></p></td>
+        <td><p><%= button_tag player.p_name %></p></td>
         <td><p><%= player.role %></p></td>
       </tr>
+      <%= hidden_field_tag 'p_name', player.p_name %>
       <% end %>
+    <% end %>
     </tbody>
   </table>
 </section>
-<section class="team-stats">
+<section class="stats-column column-3">
   <h3>Stats</h3>
 </section>
-<section class="team-stats">
+<section class="stats-column column-3">
   <h3>Schedule</h3>
 </section>

@@ -12,5 +12,9 @@ class StatController < ApplicationController
     @t_name = params[:t_name]
     @roster = Player.where("t_name = '#{@t_name}'").order("role DESC").all
   end
+
+  def player
+    @player = params[:p_name]
+  end
   
 end

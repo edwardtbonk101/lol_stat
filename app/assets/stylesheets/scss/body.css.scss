@@ -39,13 +39,19 @@ body {
     text-decoration: none;
   }
 }
-.team-stats {
+.stats-column {
   display: inline-block;
-  width: 30%;
   float: left;
   text-align: center;
-  padding: 1em;
   h3{
     color: $color-primary;
   }
+}
+.column-3 {
+  width: 30%;
+  padding: 1em;
+}
+.column-2 {
+  width: 48%;
+  padding: 1%;
 }
