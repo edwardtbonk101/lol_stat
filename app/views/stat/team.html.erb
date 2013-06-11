@@ -1,5 +1,5 @@
 <h2><%= @t_name %></h2>
-<section class="stats-column column-3">
+<section class="stats-column column-2 box-shadow">
   <h3>Roster</h3>
   <table class="table-content">
     <tbody>
@@ -8,20 +8,14 @@
         <th>Player Role</th>
       </tr>
     <% @roster.each do |player| %>
-      <%= form_tag('player', method: "put") do %>
       <tr>
-        <td><p><%= button_tag player.p_name %></p></td>
+        <td><p><%= link_to player.p_name, "#{params[:team]}/#{player.p_name}" %></p></td>
         <td><p><%= player.role %></p></td>
       </tr>
-      <%= hidden_field_tag 'p_name', player.p_name %>
-      <% end %>
     <% end %>
     </tbody>
   </table>
 </section>
-<section class="stats-column column-3">
+<section class="stats-column column-2 box-shadow">
   <h3>Stats</h3>
-</section>
-<section class="stats-column column-3">
-  <h3>Schedule</h3>
 </section>

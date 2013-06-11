@@ -9,7 +9,7 @@
     </tr>
     <% @lcs.each do |lcs| %>
       <tr>
-        <%= form_tag('team', method: "put") do %>
+        <%= form_tag('team', method: "get") do %>
           <td><p><%= button_tag lcs.name %></p></td>
         <%= hidden_field_tag 't_name', lcs.name %>
         <% end %>

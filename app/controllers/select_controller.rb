@@ -1,7 +1,7 @@
 class SelectController < ApplicationController
 
   def select
-    session[:region] = params[:amount]
+    @region = params[:region]
   end
   
 end 

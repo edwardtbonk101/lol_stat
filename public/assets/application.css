@@ -574,17 +574,22 @@ html {
 }
 
 /* line 4, ../../app/assets/stylesheets/scss/body.css.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 7, ../../app/assets/stylesheets/scss/body.css.scss */
 ul {
   list-style-type: none;
 }
 
-/* line 8, ../../app/assets/stylesheets/scss/body.css.scss */
+/* line 11, ../../app/assets/stylesheets/scss/body.css.scss */
 body h2 {
   text-align: center;
   color: #6e6e6e;
 }
 
-/* line 13, ../../app/assets/stylesheets/scss/body.css.scss */
+/* line 16, ../../app/assets/stylesheets/scss/body.css.scss */
 .main-content {
   margin: 0 auto;
   max-width: 40em;
@@ -594,7 +599,7 @@ body h2 {
   margin-bottom: 2em;
 }
 
-/* line 21, ../../app/assets/stylesheets/scss/body.css.scss */
+/* line 24, ../../app/assets/stylesheets/scss/body.css.scss */
 .table-headings {
   height: 3.5em;
   background-color: #6e6e6e;
@@ -602,46 +607,59 @@ body h2 {
   font-weight: bold;
 }
 
-/* line 27, ../../app/assets/stylesheets/scss/body.css.scss */
+/* line 30, ../../app/assets/stylesheets/scss/body.css.scss */
 .table-content {
+  box-shadow: -3px 5px 16px #888888;
   width: 100%;
   border: solid 0.15em #6e6e6e;
   background-color: #FFF;
 }
-/* line 28, ../../app/assets/stylesheets/scss/body.css.scss */
+/* line 32, ../../app/assets/stylesheets/scss/body.css.scss */
 .table-content tr:nth-child(even) {
   background: #CCC;
 }
-/* line 34, ../../app/assets/stylesheets/scss/body.css.scss */
+/* line 38, ../../app/assets/stylesheets/scss/body.css.scss */
 .table-content p {
   color: #f2643d;
 }
-/* line 37, ../../app/assets/stylesheets/scss/body.css.scss */
+/* line 41, ../../app/assets/stylesheets/scss/body.css.scss */
 .table-content a {
   color: #f2643d;
   text-decoration: none;
 }
 
-/* line 42, ../../app/assets/stylesheets/scss/body.css.scss */
+/* line 46, ../../app/assets/stylesheets/scss/body.css.scss */
 .stats-column {
   display: inline-block;
   float: left;
   text-align: center;
   padding: 1%;
 }
-/* line 47, ../../app/assets/stylesheets/scss/body.css.scss */
+/* line 51, ../../app/assets/stylesheets/scss/body.css.scss */
 .stats-column h3 {
   color: #6e6e6e;
 }
 
-/* line 51, ../../app/assets/stylesheets/scss/body.css.scss */
+/* line 55, ../../app/assets/stylesheets/scss/body.css.scss */
 .column-3 {
   width: 30%;
 }
 
-/* line 54, ../../app/assets/stylesheets/scss/body.css.scss */
+/* line 58, ../../app/assets/stylesheets/scss/body.css.scss */
 .column-2 {
-  width: 48%;
+  width: 45%;
+  margin: 1.5%;
+}
+
+/* line 62, ../../app/assets/stylesheets/scss/body.css.scss */
+.selection-column {
+  width: 40%;
+  margin: 4%;
+}
+
+/* line 66, ../../app/assets/stylesheets/scss/body.css.scss */
+.box-shadow {
+  box-shadow: -3px 5px 16px #888888;
 }
 
 /* line 1, ../../app/assets/stylesheets/scss/header.css.scss */
@@ -662,6 +680,26 @@ header p {
 /* line 12, ../../app/assets/stylesheets/scss/header.css.scss */
 span {
   color: #f2643d;
+}
+
+/* line 1, ../../app/assets/stylesheets/scss/footer.css.scss */
+footer {
+  background-color: #6e6e6e;
+  height: 100px;
+  position: relative;
+}
+
+/* line 6, ../../app/assets/stylesheets/scss/footer.css.scss */
+.clearfooter {
+  height: 150px;
+  clear: both;
+}
+
+/* line 10, ../../app/assets/stylesheets/scss/footer.css.scss */
+.container {
+  min-height: 100%;
+  margin-bottom: -100px;
+  position: relative;
 }
 
 /* line 1, ../../app/assets/stylesheets/scss/menu.css.scss */
@@ -689,16 +727,21 @@ button, a {
 
 /* line 7, ../../app/assets/stylesheets/scss/button.css.scss */
 .button-main {
-  margin-bottom: 2em;
   border: solid 0.15em #6e6e6e;
   font-weight: bold;
   width: 13em;
   padding: 1em;
   border-radius: 2em;
   background-color: white;
+  display: block;
+  margin: 0 auto 2em;
   color: #f2643d;
 }
-/* line 16, ../../app/assets/stylesheets/scss/button.css.scss */
+/* line 17, ../../app/assets/stylesheets/scss/button.css.scss */
+.button-main a {
+  width: 13em;
+}
+/* line 20, ../../app/assets/stylesheets/scss/button.css.scss */
 .button-main:hover {
   background-color: #474747;
   -moz-transition: background-color .25s, -moz-transform .25s;

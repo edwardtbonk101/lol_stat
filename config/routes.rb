@@ -3,10 +3,11 @@ LolStat::Application.routes.draw do
   resources :menu
   root :to => 'menu#index'
   get '/select' => 'select#select'
-  get '/lcs' => 'stat#lcs'
-  get '/teams' => 'stat#teams'
-  put '/team' => 'stat#team'
-  put '/player' => 'stat#player'
+  get '/:region/teams' => 'stat#teams'
+  get '/:region/lcs' => 'stat#lcs'
+  get '/:region/:team' => 'stat#team'
+  get '/:region/:team/:player' => 'player#player'
+  get '/:region' => 'select#select'
   
 
   # The priority is based upon order of creation:

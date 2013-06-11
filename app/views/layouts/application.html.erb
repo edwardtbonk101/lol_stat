@@ -11,10 +11,11 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<%= render :partial => 'shared/header' %>
-
-<%= yield %>
-
-<%= render :partial => 'shared/footer' %>
+  <div class="containter">
+    <%= render :partial => 'shared/header' %>
+    <%= yield %>
+    <div class="clearfooter"></div>
+  </div>
+    <%= render :partial => 'shared/footer' %>
 </body>
 </html>

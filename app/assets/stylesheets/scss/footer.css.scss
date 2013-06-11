@@ -1,4 +1,14 @@
-//footer {
-//  background-color: $color-primary;
-//  height: 6em;
-//}
+footer {
+  background-color: $color-primary;
+  height: 100px;
+  position: relative;
+}
+.clearfooter {
+  height: 150px;
+  clear: both;
+}
+.container {
+  min-height: 100%;
+  margin-bottom: -100px;
+  position: relative;
+}
