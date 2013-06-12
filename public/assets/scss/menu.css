@@ -1,14 +1,12 @@
 /* line 1, ../../../app/assets/stylesheets/scss/menu.css.scss */
 .menu-select {
   border-radius: 2em;
-  margin-top: 4em;
   text-align: center;
-  margin: 4em auto;
   display: block;
   height: 15em;
 }
 
-/* line 9, ../../../app/assets/stylesheets/scss/menu.css.scss */
+/* line 7, ../../../app/assets/stylesheets/scss/menu.css.scss */
 .ul-inline {
   display: inline-block;
 }

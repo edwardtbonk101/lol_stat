@@ -11,7 +11,6 @@ class StatController < ApplicationController
 
   def team
     @t_name = params[:team]
-    #@player_link = "#{params[:team]}/#{player.p_name}"
     @roster = Player.where("t_name = '#{@t_name}'").order("role DESC").all
   end
 
