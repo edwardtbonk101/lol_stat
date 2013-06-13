@@ -1,0 +1,22 @@
+.table-headings {
+  height: 3.5em;
+  background-color: $color-primary;
+  color: white;
+  font-weight: bold;
+}
+.table-content {
+  box-shadow: -3px 5px 16px #888888;
+  tr:nth-child(even) {
+    background: #CCC;
+  }
+  width: 100%;
+  border: solid .15em $color-primary;
+  background-color: #FFF;
+  p{
+    color: $color-secondary;
+  }
+  a {
+    color: $color-secondary;
+    text-decoration: none;
+  }
+}

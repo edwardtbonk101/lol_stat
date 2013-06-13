@@ -13,6 +13,9 @@ body {
     color: $color-primary;
   }
 }
+.svg {
+  font-size: 0.4em;
+}
 .main-content {
   margin: 0 auto;
   max-width: 40em;
@@ -21,28 +24,6 @@ body {
   display: block;
   text-align: center;
   margin-bottom: 2em;
-}
-.table-headings {
-  height: 3.5em;
-  background-color: $color-primary;
-  color: white;
-  font-weight: bold;
-}
-.table-content {
-  box-shadow: -3px 5px 16px #888888;
-  tr:nth-child(even) {
-    background: #CCC;
-  }
-  width: 100%;
-  border: solid .15em $color-primary;
-  background-color: #FFF;
-  p{
-    color: $color-secondary;
-  }
-  a {
-    color: $color-secondary;
-    text-decoration: none;
-  }
 }
 .stats-column {
   display: inline-block;
@@ -59,6 +40,13 @@ body {
 .column-2 {
   width: 45%;
   margin: 1.5%;
+}
+.column-1 {
+  width: 97%;
+  margin: 3% 1.5%;
+  display: inline-block;
+  color: $color-primary;
+  text-align: center;
 }
 .selection-column {
   width: 40%;
