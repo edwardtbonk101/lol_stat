@@ -26,66 +26,30 @@
 </section>
 <section class="stats-column column-2 box-shadow" id="player-graph">
   <h3>Graph</h3>
-  <svg class="svg">
-  </svg>
-  <script>
-  var data = [
-    {year: 2001, orders: 1}, 
-    {year: 2002, orders: 1}, 
-    {year: 2003, orders: 3}, 
-    {year: 2004, orders: 4}, 
-    {year: 2005, orders: 13}, 
-    {year: 2006, orders: 10}, 
-    {year: 2007, orders: 14}, 
-    {year: 2008, orders: 15}, 
-    {year: 2009, orders: 19}, 
-    {year: 2010, orders: 55}, 
-    {year: 2011, orders: 59}, 
-    {year: 2012, orders: 84},
-    //2013 is projected based on current orders
-    {year: 2013, orders: 115}];
+  <script type="text/javascript">
+    var data = [5, 2, 3];
+    var chart = d3.select("#player-graph").append("svg")
+      .attr("class", "chart")
+      .attr("width", 300)
+      .attr("height", 20 * data.length);
 
-  var padding = 30,
-    width = 400 - padding,
-      height = 200 - padding,
-      svg = d3.select("svg");
-  
-  var xscale = d3.scale.linear()
-          .domain(d3.extent(data, 
-            function(year) { return year.year; }))
-          .range([padding,width]);
-  
-  var xaxis = d3.svg.axis()
-          .scale(xscale)
-          .tickFormat(function(d) {return d});
-          //had to add a tickFormat because d3 by default
-          //was formatting the years with commas (2,012)
-  
-  svg.append('g')
-      .attr('transform', 'translate(0,' + (height) + ')')
-      .call(xaxis);
-  
-  var yscale = d3.scale.linear()
-          .domain(d3.extent(data, 
-            function(year) { return year.orders; }))
-          .range([height, padding]);
-  
-  var yaxis = d3.svg.axis()
-          .scale(yscale)
-          .orient("left");
-  
-  svg.append('g')
-    .attr('transform', 'translate(' + padding + ',0)')
-    .call(yaxis);
-  
-  svg.selectAll(".bar")
+    var x = d3.scale.linear()
+      .domain([0, d3.max(data)])
+      .range ([0, 300]);
+
+    chart.selectAll("rect")
         .data(data)
       .enter().append("rect")
-        .attr("class", "bar")
-        .attr("x", function(d) { return xscale(d.year) - 10; })
-        .attr("y", function(d) { return yscale(d.orders); })
-        .attr("height", function(d) { return height - yscale(d.orders); })
-        .attr("width", 20);
-  </script>
-</section>
+        .attr("y", function(d, i) {return i * 20; })
+        .attr("width", x)
+        .attr("height", 20);
 
+    var y = d3.scale.ordinal()
+      .domain(data)
+      .rangeBands([0, 120]);
+
+    chart.select
+
+  </script>
+
+</section>

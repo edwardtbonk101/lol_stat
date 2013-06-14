@@ -25,9 +25,9 @@
     r = 150,                            //radius
     z = d3.scale.ordinal()
       .domain(['a', 'b'])
-      .range(["#6E6E6E", "#F2643D"])
+      .range(["#6E6E6E", "#EE4618"])
     data = [{"label":"wins", "value":21}, 
-            {"label":"losses", "value":3}];
+            {"label":"losses", "value":7}];
     
     var vis = d3.select("#pie")
         .append("svg:svg")              //create the SVG element inside the <body>
@@ -62,7 +62,14 @@
             })
             .attr("text-anchor", "middle")                          //center the text on it's origin
             .text(function(d, i) { return data[i].label; });        //get the label from our original data array
-        
+        arcs.append("svg:text")
+          .attr("transform", function(d) {
+            d.innerRadius = 75;
+            d.outerRadius = r;
+            return "translate(" + arc.centroid(d) + ")"; 
+          })
+          .attr("text-anchor", "middle")
+          .text(function(d, i) { return data[i].value; });
     </script>
   </section>
   <section class="column-1 box-shadow">

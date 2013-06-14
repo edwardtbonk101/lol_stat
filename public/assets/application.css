@@ -669,7 +669,7 @@ header a {
 
 /* line 15, ../../app/assets/stylesheets/scss/header.css.scss */
 span {
-  color: #f2643d;
+  color: #ee4618;
 }
 
 /* line 1, ../../app/assets/stylesheets/scss/footer.css.scss */
@@ -726,12 +726,18 @@ footer {
 }
 /* line 15, ../../app/assets/stylesheets/scss/table.css.scss */
 .table-content p {
-  color: #f2643d;
+  color: #ee4618;
 }
 /* line 18, ../../app/assets/stylesheets/scss/table.css.scss */
 .table-content a {
-  color: #f2643d;
+  color: #ee4618;
   text-decoration: none;
+}
+
+/* line 23, ../../app/assets/stylesheets/scss/table.css.scss */
+.chart rect {
+  stroke: white;
+  fill: #ee4618;
 }
 
 /* line 1, ../../app/assets/stylesheets/scss/button.css.scss */
@@ -739,7 +745,7 @@ button, a {
   background: none;
   border: none;
   text-decoration: none;
-  color: #f2643d;
+  color: #ee4618;
 }
 
 /* line 7, ../../app/assets/stylesheets/scss/button.css.scss */
@@ -752,7 +758,7 @@ button, a {
   background-color: white;
   display: block;
   margin: 0 auto 2em;
-  color: #f2643d;
+  color: #ee4618;
 }
 /* line 17, ../../app/assets/stylesheets/scss/button.css.scss */
 .button-main a {
