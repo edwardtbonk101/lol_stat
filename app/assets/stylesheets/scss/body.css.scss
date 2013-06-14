@@ -13,6 +13,10 @@ body {
     color: $color-primary;
   }
 }
+td{
+  padding: 1em;
+  color: $color-secondary;
+}
 .svg {
   font-size: 0.4em;
 }
@@ -42,7 +46,7 @@ body {
   margin: 1.5%;
 }
 .column-1 {
-  width: 97%;
+  width: 95%;
   margin: 3% 1.5%;
   display: inline-block;
   color: $color-primary;

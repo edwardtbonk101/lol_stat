@@ -9,8 +9,8 @@
       </tr>
     <% @roster.each do |player| %>
       <tr>
-        <td><p><%= link_to player.p_name, "#{params[:team]}/#{player.p_name}" %></p></td>
-        <td><p><%= player.role %></p></td>
+        <td><%= link_to player.p_name, "#{params[:team]}/#{player.p_name}" %></td>
+        <td><%= player.role %></td>
       </tr>
     <% end %>
     </tbody>
@@ -25,8 +25,8 @@
     r = 150,                            //radius
     z = d3.scale.ordinal()
       .domain(['a', 'b'])
-      .range(["#6E6E6E", "#EE4618"])
-    data = [{"label":"wins", "value":21}, 
+      .range(["#474747", "#EE4618"])
+    data = [{"label":"wins", "value":21},
             {"label":"losses", "value":7}];
     
     var vis = d3.select("#pie")
@@ -72,6 +72,24 @@
           .text(function(d, i) { return data[i].value; });
     </script>
   </section>
-  <section class="column-1 box-shadow">
+  <section class="column-1 stats-column box-shadow">
     <h3>Schedule</h3>
+    <table class="table-content">
+    <tbody>
+      <tr class="table-headings">
+        <th>Date</th>
+        <th>Time</th>
+        <th>Blue Team</th>
+        <th>Purple Team</th>
+      </tr>
+    <% @schedule.each do |match| %>
+      <tr>
+        <td><%= match.match_date %></td>
+        <td><%= match.match_time%></td>
+        <td><%= match.team_1%></td>
+        <td><%= match.team_2%></td>
+      </tr>
+    <% end %>
+    </tbody>
+  </table>
   </section>

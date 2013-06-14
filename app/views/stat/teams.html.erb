@@ -3,13 +3,11 @@
   <table class="table-content">
     <tbody>
       <tr class="table-headings">
-        <th><h3>Team</h3></th>
+        <th>Team</th>
       </tr>
       <% @team.each do |team| %>
         <tr>
-          <td>
-            <p><%= link_to team.name, team.name%></p>
-          </td>
+          <td><%= link_to team.name, team.name%></td>
         </tr>
       <% end %>
     </tbody>

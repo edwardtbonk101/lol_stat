@@ -3,15 +3,15 @@
   <table class="table-content">
     <tbody>
     <tr class="table-headings">
-      <th><h3>Team</h3></th>
-      <th><h3>Wins</h3></th>
-      <th><h3>Losses</h3></th>
+      <th>Team</th>
+      <th>Wins</th>
+      <th>Losses</th>
     </tr>
     <% @lcs.each do |lcs| %>
       <tr>
-        <td><p><%= link_to lcs.name, lcs.name%></p></td>
-        <td><p><%= lcs.wins %></p></td>
-        <td><p><%= lcs.losses %></p></td>
+        <td><%= link_to lcs.name, lcs.name%></td>
+        <td><%= lcs.wins %></td>
+        <td><%= lcs.losses %></td>
       </tr>
     <% end %>
   </tbody>
