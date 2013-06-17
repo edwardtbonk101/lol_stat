@@ -617,7 +617,7 @@ td {
   display: inline-block;
   float: left;
   text-align: center;
-  padding: 1%;
+  padding: 3%;
 }
 /* line 38, ../../app/assets/stylesheets/scss/body.css.scss */
 .stats-column h3 {
@@ -631,13 +631,13 @@ td {
 
 /* line 45, ../../app/assets/stylesheets/scss/body.css.scss */
 .column-2 {
-  width: 45%;
+  width: 41%;
   margin: 1.5%;
 }
 
 /* line 49, ../../app/assets/stylesheets/scss/body.css.scss */
 .column-1 {
-  width: 95%;
+  width: 91%;
   margin: 3% 1.5%;
   display: inline-block;
   color: #6e6e6e;
@@ -646,7 +646,7 @@ td {
 
 /* line 56, ../../app/assets/stylesheets/scss/body.css.scss */
 .selection-column {
-  width: 40%;
+  width: 36%;
   margin: 4%;
 }
 
