@@ -657,25 +657,34 @@ td {
 
 /* line 1, ../../app/assets/stylesheets/scss/header.css.scss */
 header {
+  font-size: 93.8%;
+  background-color: #f1f2f3;
+  background-image: -webkit-linear-gradient(0deg, transparent 0.05em, rgba(0, 0, 0, 0.05) 0.05em, rgba(0, 0, 0, 0.05) 0.125em, transparent 0.125em), -webkit-linear-gradient(rgba(0, 0, 0, 0.05) 0.0625em, transparent 0.0625em);
+  background-image: -moz-linear-gradient(0deg, transparent 0.05em, rgba(0, 0, 0, 0.05) 0.05em, rgba(0, 0, 0, 0.05) 0.125em, transparent 0.125em), -moz-linear-gradient(rgba(0, 0, 0, 0.05) 0.0625em, transparent 0.0625em);
+  background-image: -ms-linear-gradient(0deg, transparent 0.05em, rgba(0, 0, 0, 0.05) 0.05em, rgba(0, 0, 0, 0.05) 0.125em, transparent 0.125em), -ms-linear-gradient(rgba(0, 0, 0, 0.05) 0.0625em, transparent 0.0625em);
+  background-image: -o-linear-gradient(0deg, transparent 0.05em, rgba(0, 0, 0, 0.05) 0.05em, rgba(0, 0, 0, 0.05) 0.125em, transparent 0.125em), -o-linear-gradient(rgba(0, 0, 0, 0.05) 0.0625em, transparent 0.0625em);
+  background-image: linear-gradient(0deg, transparent 0.05em, rgba(0, 0, 0, 0.05) 0.05em, rgba(0, 0, 0, 0.05) 0.125em, transparent 0.125em), inear-gradient(rgba(0, 0, 0, 0.05) 0.0625em, transparent 0.0625em);
+  background-size: .75em .75em;
+  background-position: 0 -0.5em;
   border-bottom: solid 0.25em #6e6e6e;
   padding: 1em;
 }
-/* line 4, ../../app/assets/stylesheets/scss/header.css.scss */
+/* line 23, ../../app/assets/stylesheets/scss/header.css.scss */
 header h1 {
   color: #6e6e6e;
   text-align: center;
 }
-/* line 8, ../../app/assets/stylesheets/scss/header.css.scss */
+/* line 27, ../../app/assets/stylesheets/scss/header.css.scss */
 header p {
   color: #6e6e6e;
   text-align: center;
 }
-/* line 12, ../../app/assets/stylesheets/scss/header.css.scss */
+/* line 31, ../../app/assets/stylesheets/scss/header.css.scss */
 header a {
   color: #6e6e6e;
 }
 
-/* line 16, ../../app/assets/stylesheets/scss/header.css.scss */
+/* line 35, ../../app/assets/stylesheets/scss/header.css.scss */
 span {
   color: #ee4618;
 }
@@ -780,6 +789,11 @@ table {
 /* line 50, ../../app/assets/stylesheets/scss/table.css.scss */
 .norm-table th:last-child {
   border-radius: 0 1em 0 0;
+}
+
+/* line 54, ../../app/assets/stylesheets/scss/table.css.scss */
+table td {
+  font-weight: normal;
 }
 
 /* line 1, ../../app/assets/stylesheets/scss/button.css.scss */

@@ -1,11 +1,9 @@
 /*
 Syntax error: Undefined variable: "$color-primary".
-        on line 2 of /Users/apple2/lol_stat/app/assets/stylesheets/scss/header.css.scss
-
-1: /Users/apple2/lol_stat/app/assets/stylesheets/scss/header.css.scss
+        on line 21 of /Users/apple2/lol_stat/app/assets/stylesheets/scss/header.css.scss
 
 Backtrace:
-/Users/apple2/lol_stat/app/assets/stylesheets/scss/header.css.scss:2
+/Users/apple2/lol_stat/app/assets/stylesheets/scss/header.css.scss:21
 /Users/apple2/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.9/lib/sass/script/variable.rb:49:in `_perform'
 /Users/apple2/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.9/lib/sass/script/node.rb:40:in `perform'
 /Users/apple2/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.9/lib/sass/script/list.rb:70:in `block in _perform'
@@ -82,4 +80,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$color-primary\".\A         on line 2 of /Users/apple2/lol_stat/app/assets/stylesheets/scss/header.css.scss\A \A 1: /Users/apple2/lol_stat/app/assets/stylesheets/scss/header.css.scss"; }
+  content: "Syntax error: Undefined variable: \"$color-primary\".\A         on line 21 of /Users/apple2/lol_stat/app/assets/stylesheets/scss/header.css.scss"; }
