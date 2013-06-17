@@ -1,8 +1,7 @@
 <h2><%= @t_name %></h2>
 <section class="stats-column column-2 box-shadow">
   <h3>Roster</h3>
-  <table class="table-content">
-    <tbody>
+  <table class="table-content norm-table">
       <tr class="table-headings">
         <th>Player Name</th>
         <th>Player Role</th>
@@ -13,7 +12,6 @@
         <td><%= player.role %></td>
       </tr>
     <% end %>
-    </tbody>
   </table>
 </section>
 <section class="stats-column column-2 box-shadow" id="pie">
@@ -74,8 +72,7 @@
   </section>
   <section class="column-1 stats-column box-shadow">
     <h3>Schedule</h3>
-    <table class="table-content">
-    <tbody>
+    <table class="table-content norm-table">
       <tr class="table-headings">
         <th>Date</th>
         <th>Time</th>
@@ -90,6 +87,5 @@
         <td><%= match.team_2%></td>
       </tr>
     <% end %>
-    </tbody>
   </table>
   </section>

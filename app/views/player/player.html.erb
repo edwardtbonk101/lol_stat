@@ -1,7 +1,6 @@
 <h2>Player: <span><%= @player %></span><h2>
 <section class="stats-column column-2 box-shadow">
-  <table class="table-content">
-    <tbody>
+  <table class="table-content norm-table">
       <h3>K/D/A</h3>
       <% @player_stats.each do |p_stat| %>
       <tr class="table-headings">
@@ -21,7 +20,6 @@
         <td><%=p_stat.assists%></td>
       </tr>
       <% end %>
-    </tbody>
   </table>
 </section>
 <section class="stats-column column-2 box-shadow" id="player-graph">

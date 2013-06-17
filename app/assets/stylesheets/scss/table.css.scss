@@ -7,10 +7,9 @@
 .table-content {
   box-shadow: -3px 5px 16px #888888;
   tr:nth-child(even) {
-    background: #CCC;
+    background: $color-tertiary;
   }
   width: 100%;
-  border: solid .15em $color-primary;
   background-color: #FFF;
   p{
     color: $color-secondary;
@@ -23,4 +22,32 @@
 .chart rect {
   stroke: white;
   fill: $color-secondary;
+}
+.solo-table {
+  th{
+    border-radius: 1em 1em 0 0;
+  }
+}
+table{
+  border-radius: 1em;
+}
+.norm-table{
+  table tr:first-child td:first-child {
+    border-radius: 0 0 0 1em;
+  }
+  table tr:first-child td:first-child {
+    border-radius: 0 0 1em 0;
+  }
+  tr:last-child td:first-child {
+    border-radius: 0 0 0 1em;
+  }
+  tr:last-child td:last-child {
+    border-radius: 0 0 1em 0;
+  }
+  th:first-child {
+    border-radius: 1em 0 0 0;
+  }
+  th:last-child {
+    border-radius: 0 1em 0 0;
+  }
 }
