@@ -3,6 +3,7 @@ LolStat::Application.routes.draw do
   resources :menu
   root :to => 'menu#index'
   get '/select' => 'select#select'
+  get '/about' => 'about#about'
   get '/:region/teams' => 'stat#teams'
   get '/:region/lcs' => 'stat#lcs'
   get '/:region/:team' => 'stat#team'

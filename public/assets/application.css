@@ -581,26 +581,27 @@ html, body {
 /* line 7, ../../app/assets/stylesheets/scss/body.css.scss */
 ul {
   list-style-type: none;
+  padding: 0;
 }
 
-/* line 11, ../../app/assets/stylesheets/scss/body.css.scss */
+/* line 12, ../../app/assets/stylesheets/scss/body.css.scss */
 body h2 {
   text-align: center;
   color: #6e6e6e;
 }
 
-/* line 16, ../../app/assets/stylesheets/scss/body.css.scss */
+/* line 17, ../../app/assets/stylesheets/scss/body.css.scss */
 td {
   padding: 1em;
   color: #ee4618;
 }
 
-/* line 20, ../../app/assets/stylesheets/scss/body.css.scss */
+/* line 21, ../../app/assets/stylesheets/scss/body.css.scss */
 .svg {
   font-size: 0.4em;
 }
 
-/* line 23, ../../app/assets/stylesheets/scss/body.css.scss */
+/* line 24, ../../app/assets/stylesheets/scss/body.css.scss */
 .main-content {
   margin: 0 auto;
   max-width: 40em;
@@ -611,7 +612,7 @@ td {
   margin-bottom: 2em;
 }
 
-/* line 32, ../../app/assets/stylesheets/scss/body.css.scss */
+/* line 33, ../../app/assets/stylesheets/scss/body.css.scss */
 .stats-column {
   border-radius: 1em;
   display: inline-block;
@@ -619,23 +620,23 @@ td {
   text-align: center;
   padding: 3%;
 }
-/* line 38, ../../app/assets/stylesheets/scss/body.css.scss */
+/* line 39, ../../app/assets/stylesheets/scss/body.css.scss */
 .stats-column h3 {
   color: #6e6e6e;
 }
 
-/* line 42, ../../app/assets/stylesheets/scss/body.css.scss */
+/* line 43, ../../app/assets/stylesheets/scss/body.css.scss */
 .column-3 {
   width: 30%;
 }
 
-/* line 45, ../../app/assets/stylesheets/scss/body.css.scss */
+/* line 46, ../../app/assets/stylesheets/scss/body.css.scss */
 .column-2 {
   width: 41%;
   margin: 1.5%;
 }
 
-/* line 49, ../../app/assets/stylesheets/scss/body.css.scss */
+/* line 50, ../../app/assets/stylesheets/scss/body.css.scss */
 .column-1 {
   width: 91%;
   margin: 3% 1.5%;
@@ -644,13 +645,16 @@ td {
   text-align: center;
 }
 
-/* line 56, ../../app/assets/stylesheets/scss/body.css.scss */
+/* line 57, ../../app/assets/stylesheets/scss/body.css.scss */
 .selection-column {
   width: 36%;
-  margin: 4%;
+  margin-top: 8em;
+  margin-left: 4%;
+  margin-right: 4%;
+  height: 18em;
 }
 
-/* line 60, ../../app/assets/stylesheets/scss/body.css.scss */
+/* line 64, ../../app/assets/stylesheets/scss/body.css.scss */
 .box-shadow {
   box-shadow: -3px 5px 16px #888888;
 }
@@ -683,30 +687,59 @@ header p {
 header a {
   color: #6e6e6e;
 }
+/* line 34, ../../app/assets/stylesheets/scss/header.css.scss */
+header nav li {
+  width: 1em;
+  display: inline-block;
+  padding: .5em;
+  background-color: black;
+  border-radius: 1em;
+}
+/* line 41, ../../app/assets/stylesheets/scss/header.css.scss */
+header ul {
+  background-color: #6e6e6e;
+}
+/* line 43, ../../app/assets/stylesheets/scss/header.css.scss */
+header ul li {
+  display: inline-block;
+  border: 5px solid black;
+  margin: 1em;
+}
 
-/* line 35, ../../app/assets/stylesheets/scss/header.css.scss */
+/* line 50, ../../app/assets/stylesheets/scss/header.css.scss */
 span {
   color: #ee4618;
 }
 
 /* line 1, ../../app/assets/stylesheets/scss/footer.css.scss */
 footer {
-  background-color: #6e6e6e;
-  height: 10em;
+  background-image: url("bg.png");
   position: relative;
+  text-align: center;
+}
+/* line 5, ../../app/assets/stylesheets/scss/footer.css.scss */
+footer h3 {
+  color: white;
 }
 
-/* line 6, ../../app/assets/stylesheets/scss/footer.css.scss */
+/* line 9, ../../app/assets/stylesheets/scss/footer.css.scss */
 .clearfooter {
-  height: 220px;
+  height: 300px;
   clear: both;
 }
 
-/* line 10, ../../app/assets/stylesheets/scss/footer.css.scss */
+/* line 13, ../../app/assets/stylesheets/scss/footer.css.scss */
 .container {
   min-height: 100%;
   margin-bottom: -100px;
   position: relative;
+}
+
+/* line 18, ../../app/assets/stylesheets/scss/footer.css.scss */
+.footer-content {
+  width: 30%;
+  display: inline-block;
+  padding: 1%;
 }
 
 /* line 1, ../../app/assets/stylesheets/scss/table.css.scss */
@@ -781,6 +814,21 @@ table {
 /* line 54, ../../app/assets/stylesheets/scss/table.css.scss */
 table td {
   font-weight: normal;
+}
+
+/* line 1, ../../app/assets/stylesheets/scss/about.css.scss */
+.about-content {
+  margin: 0 auto;
+  color: white;
+  background-color: #474747;
+  font-size: 1.5em;
+  margin-top: 3em;
+  border-radius: 1em;
+  width: 55%;
+  text-align: center;
+  min-width: 11em;
+  max-width: 30em;
+  padding: 2em;
 }
 
 /* line 1, ../../app/assets/stylesheets/scss/button.css.scss */

@@ -6,6 +6,7 @@ html, body {
 }
 ul{
   list-style-type: none;
+  padding: 0;
 }
 body {
   h2 {
@@ -55,7 +56,10 @@ td{
 }
 .selection-column {
   width: 36%;
-  margin: 4%;
+  margin-top: 8em;
+  margin-left: 4%;
+  margin-right: 4%;
+  height: 18em;
 }
 .box-shadow{
   box-shadow: -3px 5px 16px #888888;

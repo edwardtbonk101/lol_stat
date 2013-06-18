@@ -1,14 +1,22 @@
 footer {
-  background-color: $color-primary;
-  height: 10em;
+  background-image:url('bg.png');
   position: relative;
+  text-align: center;
+  h3 {
+    color: white;
+  }
 }
 .clearfooter {
-  height: 220px;
+  height: 300px;
   clear: both;
 }
 .container {
   min-height: 100%;
   margin-bottom: -100px;
   position: relative;
+}
+.footer-content {
+  width: 30%;
+  display: inline-block;
+  padding: 1%
 }

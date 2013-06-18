@@ -1,13 +1,14 @@
-<h2>Select a Region</h2>
 <section class ="stats-column selection-column box-shadow">
  <%= link_to "North America", '/NA', :method => "get", :class => "button-main" %>
-  <svg width="200" height="200">
-    <rect x="0" y="0" width="200" height="200" fill="white" ></rect>
-  </svg>
+  <ul> 
+    <li><a href="/NA/teams">Teams</a></li> 
+    <li><a href="/NA/lcs">LCS Standings</a></li> 
+  </ul> 
 </section>
 <section class ="stats-column selection-column box-shadow">
   <%= link_to "Europe", '/EU', :method => "get", :class => "button-main" %>
-  <svg width="200" height="200">
-    <rect x="0" y="0" width="200" height="200" fill="white" ></rect>
-  </svg>
+  <ul> 
+    <li><a href="/EU/teams">Teams</a></li> 
+    <li><a href="/EU/lcs">LCS Standings</a></li> 
+  </ul> 
 </section>
