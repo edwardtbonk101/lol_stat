@@ -10,4 +10,8 @@ class PlayerController < ApplicationController
     end
   end
 
+  def players
+    @players = Player.where("region = '#{params[:region]}'")
+  end
+
 end

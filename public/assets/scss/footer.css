@@ -11,7 +11,7 @@ footer h3 {
 
 /* line 9, ../../../app/assets/stylesheets/scss/footer.css.scss */
 .clearfooter {
-  height: 300px;
+  height: 150px;
   clear: both;
 }
 
@@ -27,4 +27,5 @@ footer h3 {
   width: 30%;
   display: inline-block;
   padding: 1%;
+  vertical-align: top;
 }

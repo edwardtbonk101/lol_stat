@@ -1,25 +1,25 @@
 <h2>Player: <span><%= @player %></span><h2>
 <section class="stats-column column-2 box-shadow">
   <table class="table-content norm-table">
-      <h3>K/D/A</h3>
-      <% @player_stats.each do |p_stat| %>
-      <tr class="table-headings">
-        <th>Stat</th>
-        <th>Value</th>
-      </tr>
-      <tr>
-        <td>Kills</td>
-        <td><%=p_stat.kills%></td>
-      </tr>
-      <tr>
-        <td>Deaths</td>
-        <td><%=p_stat.deaths%></td>
-      </tr>
-      <tr>
-        <td>Assists</td>
-        <td><%=p_stat.assists%></td>
-      </tr>
-      <% end %>
+    <h3>K/D/A</h3>
+    <% @player_stats.each do |p_stat| %>
+    <tr class="table-headings">
+      <th>Stat</th>
+      <th>Value</th>
+    </tr>
+    <tr>
+      <td>Kills</td>
+      <td><%=p_stat.kills%></td>
+    </tr>
+    <tr>
+      <td>Deaths</td>
+      <td><%=p_stat.deaths%></td>
+    </tr>
+    <tr>
+      <td>Assists</td>
+      <td><%=p_stat.assists%></td>
+    </tr>
+    <% end %>
   </table>
 </section>
 <section class="stats-column column-2 box-shadow" id="player-graph">

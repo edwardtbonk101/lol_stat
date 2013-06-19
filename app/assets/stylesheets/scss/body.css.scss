@@ -62,6 +62,14 @@ td{
   margin-top: 8em;
   margin-left: 4%;
   margin-right: 4%;
+  background: $color-primary;
+  h2 {
+    color: white;
+  }
+  ul{
+    background: white;
+    border-radius: 1em;
+  }
 }
 .box-shadow{
   box-shadow: -3px 5px 16px #888888;

@@ -7,7 +7,7 @@ footer {
   }
 }
 .clearfooter {
-  height: 300px;
+  height: 150px;
   clear: both;
 }
 .container {
@@ -18,5 +18,6 @@ footer {
 .footer-content {
   width: 30%;
   display: inline-block;
-  padding: 1%
+  padding: 1%;
+  vertical-align: top;
 }
