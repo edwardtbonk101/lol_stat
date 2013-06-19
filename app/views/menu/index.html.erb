@@ -1,14 +1,22 @@
-<section class ="stats-column selection-column box-shadow">
- <%= link_to "North America", '/NA', :method => "get", :class => "button-main" %>
+ <section class ="stats-column selection-column box-shadow">
+ <h2>North America</h2>
   <ul> 
     <li><a href="/NA/teams">Teams</a></li> 
-    <li><a href="/NA/lcs">LCS Standings</a></li> 
-  </ul> 
+    <li><%= render :partial => 'shared/table-svg' %></li>
+    <li><a href="/NA/lcs">LCS Standings</a></li>
+    <li><%= render :partial => 'shared/graph-svg' %></li>
+    <li><a href="/NA/players">Players</a></li>
+    <li><%= render :partial => 'shared/player-svg' %></li>
+  </ul>
 </section>
 <section class ="stats-column selection-column box-shadow">
-  <%= link_to "Europe", '/EU', :method => "get", :class => "button-main" %>
+  <h2>Europe</h2>
   <ul> 
     <li><a href="/EU/teams">Teams</a></li> 
+    <li><%= render :partial => 'shared/table-svg' %></li>
     <li><a href="/EU/lcs">LCS Standings</a></li> 
-  </ul> 
+    <li><%= render :partial => 'shared/graph-svg' %></li>
+    <li><a href="/EU/players">Players</a></li>
+    <li><%= render :partial => 'shared/player-svg' %></li>
+  </ul>
 </section>

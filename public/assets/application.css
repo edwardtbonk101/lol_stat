@@ -10,6 +10,14 @@
  *
  *= require_self
  */
+@font-face {
+  font-family: 'Social-icons';
+  src: url("fonts/Social-icons.eot");
+  src: url("fonts/Social-icons.eot?#iefix") format("embedded-opentype"), url("fonts/Social-icons.woff") format("woff"), url("fonts/Social-icons.ttf") format("truetype"), url("fonts/Social-icons.svg#Social-icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* normalize.css v1.1.1 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
@@ -583,25 +591,29 @@ ul {
   list-style-type: none;
   padding: 0;
 }
+/* line 10, ../../app/assets/stylesheets/scss/body.css.scss */
+ul li {
+  padding: 0.5em;
+}
 
-/* line 12, ../../app/assets/stylesheets/scss/body.css.scss */
+/* line 15, ../../app/assets/stylesheets/scss/body.css.scss */
 body h2 {
   text-align: center;
   color: #6e6e6e;
 }
 
-/* line 17, ../../app/assets/stylesheets/scss/body.css.scss */
+/* line 20, ../../app/assets/stylesheets/scss/body.css.scss */
 td {
   padding: 1em;
   color: #ee4618;
 }
 
-/* line 21, ../../app/assets/stylesheets/scss/body.css.scss */
+/* line 24, ../../app/assets/stylesheets/scss/body.css.scss */
 .svg {
   font-size: 0.4em;
 }
 
-/* line 24, ../../app/assets/stylesheets/scss/body.css.scss */
+/* line 27, ../../app/assets/stylesheets/scss/body.css.scss */
 .main-content {
   margin: 0 auto;
   max-width: 40em;
@@ -612,7 +624,7 @@ td {
   margin-bottom: 2em;
 }
 
-/* line 33, ../../app/assets/stylesheets/scss/body.css.scss */
+/* line 36, ../../app/assets/stylesheets/scss/body.css.scss */
 .stats-column {
   border-radius: 1em;
   display: inline-block;
@@ -620,23 +632,23 @@ td {
   text-align: center;
   padding: 3%;
 }
-/* line 39, ../../app/assets/stylesheets/scss/body.css.scss */
+/* line 42, ../../app/assets/stylesheets/scss/body.css.scss */
 .stats-column h3 {
   color: #6e6e6e;
 }
 
-/* line 43, ../../app/assets/stylesheets/scss/body.css.scss */
+/* line 46, ../../app/assets/stylesheets/scss/body.css.scss */
 .column-3 {
   width: 30%;
 }
 
-/* line 46, ../../app/assets/stylesheets/scss/body.css.scss */
+/* line 49, ../../app/assets/stylesheets/scss/body.css.scss */
 .column-2 {
   width: 41%;
   margin: 1.5%;
 }
 
-/* line 50, ../../app/assets/stylesheets/scss/body.css.scss */
+/* line 53, ../../app/assets/stylesheets/scss/body.css.scss */
 .column-1 {
   width: 91%;
   margin: 3% 1.5%;
@@ -645,16 +657,15 @@ td {
   text-align: center;
 }
 
-/* line 57, ../../app/assets/stylesheets/scss/body.css.scss */
+/* line 60, ../../app/assets/stylesheets/scss/body.css.scss */
 .selection-column {
   width: 36%;
   margin-top: 8em;
   margin-left: 4%;
   margin-right: 4%;
-  height: 18em;
 }
 
-/* line 64, ../../app/assets/stylesheets/scss/body.css.scss */
+/* line 66, ../../app/assets/stylesheets/scss/body.css.scss */
 .box-shadow {
   box-shadow: -3px 5px 16px #888888;
 }
@@ -782,36 +793,58 @@ footer h3 {
 }
 
 /* line 31, ../../app/assets/stylesheets/scss/table.css.scss */
+.icon-table, .icon-bars {
+  font-family: 'Social-icons';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 41, ../../app/assets/stylesheets/scss/table.css.scss */
+.icon-table:before {
+  content: "\e002";
+}
+
+/* line 44, ../../app/assets/stylesheets/scss/table.css.scss */
+.icon-bars:before {
+  content: "\e000";
+}
+
+/* line 47, ../../app/assets/stylesheets/scss/table.css.scss */
 table {
   border-radius: 1em;
 }
 
-/* line 35, ../../app/assets/stylesheets/scss/table.css.scss */
+/* line 51, ../../app/assets/stylesheets/scss/table.css.scss */
 .norm-table table tr:first-child td:first-child {
   border-radius: 0 0 0 1em;
 }
-/* line 38, ../../app/assets/stylesheets/scss/table.css.scss */
+/* line 54, ../../app/assets/stylesheets/scss/table.css.scss */
 .norm-table table tr:first-child td:first-child {
   border-radius: 0 0 1em 0;
 }
-/* line 41, ../../app/assets/stylesheets/scss/table.css.scss */
+/* line 57, ../../app/assets/stylesheets/scss/table.css.scss */
 .norm-table tr:last-child td:first-child {
   border-radius: 0 0 0 1em;
 }
-/* line 44, ../../app/assets/stylesheets/scss/table.css.scss */
+/* line 60, ../../app/assets/stylesheets/scss/table.css.scss */
 .norm-table tr:last-child td:last-child {
   border-radius: 0 0 1em 0;
 }
-/* line 47, ../../app/assets/stylesheets/scss/table.css.scss */
+/* line 63, ../../app/assets/stylesheets/scss/table.css.scss */
 .norm-table th:first-child {
   border-radius: 1em 0 0 0;
 }
-/* line 50, ../../app/assets/stylesheets/scss/table.css.scss */
+/* line 66, ../../app/assets/stylesheets/scss/table.css.scss */
 .norm-table th:last-child {
   border-radius: 0 1em 0 0;
 }
 
-/* line 54, ../../app/assets/stylesheets/scss/table.css.scss */
+/* line 70, ../../app/assets/stylesheets/scss/table.css.scss */
 table td {
   font-weight: normal;
 }
