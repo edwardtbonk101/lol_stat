@@ -8,6 +8,7 @@ LolStat::Application.routes.draw do
   get '/:region/lcs' => 'stat#lcs'
   get '/:region/:team' => 'stat#team'
   get '/:region/:team/:player' => 'player#player'
+  get '/:region/players/:player' => 'player#player'
   get '/:region' => 'select#select'
   
 
