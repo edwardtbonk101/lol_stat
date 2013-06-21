@@ -1,12 +1,23 @@
-<table class="table-content norm-table">
-  <tr>
-    <th>Player Name</th>
-    <th>Player Role</th>
-  </tr>
-  <% @players.each do |player| %>
+<h2>Players</h2>
+<section class="main-content">
+  <table class="table-content norm-table">
+    <tr class="table-headings">
+      <th>Player Name</th>
+      <th>Player Role</th>
+      <th>Team Name</th>
+      <th>Kills</th>
+      <th>Deaths</th>
+      <th>Assists</th>
+    </tr>
+    <% @players.each do |player| %>
     <tr>
       <td><%= link_to player.p_name, "#{params[:team]}/#{player.p_name}" %></td>
       <td><%= player.role %></td>
+      <td><%= player.t_name %></td>
+      <td><%= player.kills %></td>
+      <td><%= player.deaths %></td>
+      <td><%= player.assists %></td>
     </tr>
-  <% end %>
-</table>
+    <% end %>
+  </table>
+</section>
