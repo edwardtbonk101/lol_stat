@@ -13,7 +13,7 @@
     <tr>
       <td><%= link_to player.p_name, "player/#{player.p_name}" %></td>
       <td><%= player.role %></td>
-      <td><%= player.t_name %></td>
+      <td><%= link_to player.t_name, player.t_name %></td>
       <td><%= player.player_split.kills %></td>
       <td><%= player.player_split.deaths %></td>
       <td><%= player.player_split.assists %></td>
