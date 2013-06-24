@@ -2,7 +2,8 @@ class PlayerController < ApplicationController
 
   def player
     @player = params[:player]
-    @player_stats = Player.where("p_name = ?", @player).all
+    @player_stats = Player.includes(:player_split).where("p_name = ?", @player).all
+    @split = 'player_split'
   end
 
   def players

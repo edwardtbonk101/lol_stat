@@ -15,7 +15,7 @@ class StatController < ApplicationController
   def team
     @t_name = params[:team]
     @roster = Player.where("t_name = ?", @t_name).order("role DESC").all
-    @schedule = Schedule.where("team_1 = ? OR team_2 = ?", @t_name, @t_name).order("match_date DESC").all
+    @schedule = Match.where("blue_team = ? OR purple_team = ?", @t_name, @t_name).order("match_date DESC").all
   end
 
 end
