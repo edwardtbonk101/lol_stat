@@ -660,7 +660,7 @@ td {
   margin-top: 8em;
   margin-left: 4%;
   margin-right: 4%;
-  background: #6e6e6e;
+  background: linear-gradient(0deg, #474747, #6e6e6e);
 }
 /* line 51, ../../app/assets/stylesheets/scss/body.css.scss */
 .selection-column h2 {
@@ -878,13 +878,14 @@ table td {
 .about-content {
   margin: 0 auto;
   color: white;
-  background-color: #474747;
   font-size: 1.5em;
-  margin-top: 3em;
+  margin-top: 5em;
+  margin-bottom: 4em;
   border-radius: 1em;
   width: 55%;
   text-align: center;
   min-width: 11em;
   max-width: 30em;
   padding: 2em;
+  background-color: #474747;
 }

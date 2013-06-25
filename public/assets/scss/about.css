@@ -1,11 +1,9 @@
 /*
 Syntax error: Undefined variable: "$color-background".
-        on line 4 of /Users/apple2/lol_stat/app/assets/stylesheets/scss/about.css.scss
-
-1: /Users/apple2/lol_stat/app/assets/stylesheets/scss/about.css.scss
+        on line 13 of /Users/apple2/lol_stat/app/assets/stylesheets/scss/about.css.scss
 
 Backtrace:
-/Users/apple2/lol_stat/app/assets/stylesheets/scss/about.css.scss:4
+/Users/apple2/lol_stat/app/assets/stylesheets/scss/about.css.scss:13
 /Users/apple2/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.9/lib/sass/script/variable.rb:49:in `_perform'
 /Users/apple2/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.9/lib/sass/script/node.rb:40:in `perform'
 /Users/apple2/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:298:in `visit_prop'
@@ -78,4 +76,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$color-background\".\A         on line 4 of /Users/apple2/lol_stat/app/assets/stylesheets/scss/about.css.scss\A \A 1: /Users/apple2/lol_stat/app/assets/stylesheets/scss/about.css.scss"; }
+  content: "Syntax error: Undefined variable: \"$color-background\".\A         on line 13 of /Users/apple2/lol_stat/app/assets/stylesheets/scss/about.css.scss"; }
