@@ -10,14 +10,15 @@
  *
  *= require_self
  */
-
 @import 'compass';
-@import 'scss/fonts.css.scss';
+@import 'scss/variables.css.scss';
 @import 'scss/colors.css.scss';
+@import 'breakpoint';
+@import 'scss/fonts.css.scss';
+@import 'scss/global.css.scss';
 @import 'scss/normalize.css.scss';
 @import 'scss/body.css.scss';
 @import 'scss/header.css.scss';
 @import 'scss/footer.css.scss';
 @import 'scss/table.css.scss';
 @import 'scss/about.css.scss';
-@import 'scss/button.css.scss';

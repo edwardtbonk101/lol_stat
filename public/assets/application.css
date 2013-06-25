@@ -18,6 +18,32 @@
   font-style: normal;
 }
 
+/* line 1, ../../app/assets/stylesheets/scss/global.css.scss */
+html {
+  background-image: url("grain.png");
+}
+
+/* line 4, ../../app/assets/stylesheets/scss/global.css.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 7, ../../app/assets/stylesheets/scss/global.css.scss */
+ul {
+  list-style-type: none;
+  padding: 0em;
+}
+/* line 10, ../../app/assets/stylesheets/scss/global.css.scss */
+ul li {
+  padding: 0.5em;
+}
+
+/* line 14, ../../app/assets/stylesheets/scss/global.css.scss */
+a {
+  text-decoration: none;
+  color: #ee4618;
+}
+
 /* normalize.css v1.1.1 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
@@ -336,13 +362,6 @@ dd {
 /**
  * Address paddings set differently in IE 6/7.
  */
-/* line 314, ../../app/assets/stylesheets/scss/normalize.css.scss */
-menu,
-ol,
-ul {
-  padding: 0 0 0 40px;
-}
-
 /**
  * Correct list images handled incorrectly in IE 7.
  */
@@ -576,44 +595,24 @@ table {
   border-spacing: 0;
 }
 
-/* line 1, ../../app/assets/stylesheets/scss/body.css.scss */
-html {
-  background-image: url("grain.png");
-}
-
-/* line 4, ../../app/assets/stylesheets/scss/body.css.scss */
-html, body {
-  height: 100%;
-}
-
-/* line 7, ../../app/assets/stylesheets/scss/body.css.scss */
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-/* line 10, ../../app/assets/stylesheets/scss/body.css.scss */
-ul li {
-  padding: 0.5em;
-}
-
-/* line 15, ../../app/assets/stylesheets/scss/body.css.scss */
+/* line 2, ../../app/assets/stylesheets/scss/body.css.scss */
 body h2 {
   text-align: center;
   color: #6e6e6e;
 }
 
-/* line 20, ../../app/assets/stylesheets/scss/body.css.scss */
+/* line 7, ../../app/assets/stylesheets/scss/body.css.scss */
 td {
   padding: 1em;
   color: #ee4618;
 }
 
-/* line 24, ../../app/assets/stylesheets/scss/body.css.scss */
+/* line 11, ../../app/assets/stylesheets/scss/body.css.scss */
 .svg {
   font-size: 0.4em;
 }
 
-/* line 27, ../../app/assets/stylesheets/scss/body.css.scss */
+/* line 14, ../../app/assets/stylesheets/scss/body.css.scss */
 .main-content {
   margin: 0 auto;
   max-width: 40em;
@@ -624,31 +623,30 @@ td {
   margin-bottom: 2em;
 }
 
-/* line 36, ../../app/assets/stylesheets/scss/body.css.scss */
+/* line 23, ../../app/assets/stylesheets/scss/body.css.scss */
 .stats-column {
   border-radius: 1em;
-  display: inline-block;
-  float: left;
   text-align: center;
   padding: 3%;
 }
-/* line 42, ../../app/assets/stylesheets/scss/body.css.scss */
+/* line 27, ../../app/assets/stylesheets/scss/body.css.scss */
 .stats-column h3 {
   color: #6e6e6e;
 }
 
-/* line 46, ../../app/assets/stylesheets/scss/body.css.scss */
+/* line 31, ../../app/assets/stylesheets/scss/body.css.scss */
 .column-3 {
   width: 30%;
 }
 
-/* line 49, ../../app/assets/stylesheets/scss/body.css.scss */
+/* line 34, ../../app/assets/stylesheets/scss/body.css.scss */
 .column-2 {
-  width: 41%;
+  width: 91%;
   margin: 1.5%;
+  margin-top: 2.5em;
 }
 
-/* line 53, ../../app/assets/stylesheets/scss/body.css.scss */
+/* line 39, ../../app/assets/stylesheets/scss/body.css.scss */
 .column-1 {
   width: 91%;
   margin: 3% 1.5%;
@@ -657,29 +655,45 @@ td {
   text-align: center;
 }
 
-/* line 60, ../../app/assets/stylesheets/scss/body.css.scss */
+/* line 46, ../../app/assets/stylesheets/scss/body.css.scss */
 .selection-column {
-  width: 36%;
   margin-top: 8em;
   margin-left: 4%;
   margin-right: 4%;
   background: #6e6e6e;
 }
-/* line 66, ../../app/assets/stylesheets/scss/body.css.scss */
+/* line 51, ../../app/assets/stylesheets/scss/body.css.scss */
 .selection-column h2 {
   color: white;
 }
-/* line 69, ../../app/assets/stylesheets/scss/body.css.scss */
+/* line 54, ../../app/assets/stylesheets/scss/body.css.scss */
 .selection-column ul {
   background: white;
   border-radius: 1em;
 }
 
-/* line 74, ../../app/assets/stylesheets/scss/body.css.scss */
+/* line 60, ../../app/assets/stylesheets/scss/body.css.scss */
 .box-shadow {
   box-shadow: -3px 5px 16px #888888;
 }
 
+@media (min-width: 45em) {
+  /* line 65, ../../app/assets/stylesheets/scss/body.css.scss */
+  .stats-column {
+    display: inline-block;
+    float: left;
+  }
+
+  /* line 69, ../../app/assets/stylesheets/scss/body.css.scss */
+  .selection-column {
+    width: 36%;
+  }
+
+  /* line 72, ../../app/assets/stylesheets/scss/body.css.scss */
+  .column-2 {
+    width: 41%;
+  }
+}
 /* line 1, ../../app/assets/stylesheets/scss/header.css.scss */
 header {
   font-size: 93.8%;
@@ -873,37 +887,4 @@ table td {
   min-width: 11em;
   max-width: 30em;
   padding: 2em;
-}
-
-/* line 1, ../../app/assets/stylesheets/scss/button.css.scss */
-button, a {
-  background: none;
-  border: none;
-  text-decoration: none;
-  color: #ee4618;
-}
-
-/* line 7, ../../app/assets/stylesheets/scss/button.css.scss */
-.button-main {
-  border: solid 0.15em #6e6e6e;
-  font-weight: bold;
-  width: 55%;
-  padding: 1em;
-  border-radius: 2em;
-  background-color: white;
-  display: block;
-  margin: 0 auto 2em;
-  color: #ee4618;
-}
-/* line 17, ../../app/assets/stylesheets/scss/button.css.scss */
-.button-main a {
-  width: 13em;
-}
-/* line 20, ../../app/assets/stylesheets/scss/button.css.scss */
-.button-main:hover {
-  background-color: #474747;
-  -moz-transition: background-color .25s, -moz-transform .25s;
-  -webkit-transition: background-color .25s, -webkit-transform .25s;
-  -o-transition: background-color .25s, -o-transform .25s;
-  transition: background-color .25s, transform .25s;
 }
